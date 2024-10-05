@@ -1,0 +1,53 @@
+@import "../../assets/styles/app";
+
+.construction {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 24px 176px;
+
+  @include desktop {
+    padding: 64px 100px 648px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color_main;
+
+    @include desktop {
+      font-size: 54px;
+    }
+  }
+
+  .description {
+    margin-top: 24px;
+    font-size: 12px;
+    line-height: 140%;
+    color: $color_body_50;
+
+    @include desktop {
+      margin-top: 64px;
+      font-size: 24px;
+    }
+  }
+
+  svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+    width: 383px;
+    height: 112px;
+
+    @include desktop {
+      width: 1720px;
+      height: 502px;
+      bottom: 64px;
+    }
+
+
+  }
+
+}

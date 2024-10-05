@@ -1,0 +1,198 @@
+@import "../../assets/styles/app";
+
+.typography {
+  padding: 32px;
+
+  @include desktop {
+    padding: 0 100px;
+    height: 1026px;
+    display: flex;
+  }
+
+  .top {
+
+    @include desktop {
+      padding-top: 64px;
+      padding-bottom: 108px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 140%;
+      text-transform: uppercase;
+      color: $color_main;
+
+      @include desktop {
+        font-size: 54px;
+      }
+    }
+
+    .wrapper {
+      margin-top: 24px;
+
+      @include desktop {
+        margin-top: 0;
+      }
+
+      .label {
+        font-size: 12px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color_main_100;
+
+        @include desktop {
+          font-size: 24px;
+        }
+      }
+
+      .alphabet {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 140%;
+        color: $color_body_50;
+        word-break: break-all;
+
+        @include desktop {
+          margin-top: 24px;
+          font-size: 24px;
+          width: 394px;
+
+        }
+      }
+
+      .btn {
+        @include button;
+        @include centerRow;
+        border: 1px solid $color_lines;
+        width: 312px;
+        height: 48px;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $color_bg_and_text;
+        transition: 0.3s;
+
+        @include desktop {
+          width: 396px;
+          height: 50px;
+          margin-left: unset;
+          margin-right: unset;
+        }
+
+        &:hover {
+          background-color: #222;
+        }
+
+        span {
+          margin-left: 8px;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 140%;
+          text-transform: uppercase;
+          text-align: center;
+          color: $color_main;
+
+          @include desktop {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .bottom {
+    margin-top: 32px;
+    height: 297px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include desktop {
+      margin-top: 0;
+      height: auto;
+      flex-grow: 1;
+    }
+
+    .bottomItem {
+      border-right: 1px solid $color_lines;
+      padding-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+
+      @include desktop {
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+
+      .bottomItemTop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop {
+          align-self: flex-end;
+          align-items: flex-start;
+        }
+
+        p:nth-child(1) {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 140%;
+          text-align: center;
+          color: $color_main_100;
+          padding-left: 8px;
+          padding-right: 8px;
+
+          @include desktop {
+            font-size: 24px;
+            padding-left: 0;
+            padding-right: 16px;
+          }
+        }
+
+        p:nth-child(2) {
+          margin-top: 8px;
+          font-size: 12px;
+          line-height: 140%;
+          color: $color_body_50;
+
+          @include desktop {
+            font-size: 24px;
+          }
+        }
+
+
+      }
+
+      .testText {
+        font-weight: 700;
+        font-size: 93px;
+        line-height: 140%;
+        color: $color_main_100;
+        text-align: center;
+
+        @include desktop {
+          font-size: 340px;
+          text-align: right;
+        }
+      }
+
+      &:not(:first-child) {
+        .testText {
+          text-transform: uppercase;
+        }
+      }
+
+    }
+
+
+  }
+
+}

@@ -1,0 +1,245 @@
+@import "../../assets/styles/app";
+
+.colorWhiteBlackLogos {
+
+  .block {
+
+    @include desktop {
+      min-height: 943px;
+    }
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .top {
+      padding: 32px 24px;
+
+      @include desktop {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 100px;
+        padding-right: 24px;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color_main;
+
+        @include desktop {
+          font-size: 54px;
+        }
+      }
+
+      .descriptions {
+        margin-top: 24px;
+
+        @include desktop {
+          margin-top: 64px;
+        }
+
+        p {
+
+          font-size: 12px;
+          line-height: 140%;
+          color: $color_body_50;
+
+          @include desktop {
+            font-size: 24px;
+          }
+
+          &:not(:first-child) {
+            margin-top: 1.4 * 12px;
+
+            @include desktop {
+              margin-top: 1.4 * 24px;
+            }
+          }
+        }
+      }
+
+      .downloadTitle {
+        margin-top: 32px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color_main;
+
+        @include desktop {
+          margin-top: 64px;
+          font-size: 24px;
+        }
+      }
+
+      .downloadDescription {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 140%;
+        color: $color_body_50;
+
+        @include desktop {
+          margin-top: 24px;
+          font-size: 24px;
+        }
+      }
+
+      .btn {
+        @include button;
+        @include centerRow;
+        border: 1px solid $color_lines;
+        width: 312px;
+        height: 48px;
+        margin-top: 24px;
+        background-color: $color_bg_and_text;
+        transition: 0.3s;
+
+        @include desktop {
+          width: 396px;
+          height: 50px;
+        }
+
+        &:hover {
+          background-color: #222;
+        }
+
+        span {
+          margin-left: 8px;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 140%;
+          text-transform: uppercase;
+          text-align: center;
+          color: $color_main;
+
+          @include desktop {
+            font-size: 16px;
+          }
+        }
+
+
+      }
+
+    }
+
+    .bottom {
+      @include centerColumn;
+      padding: 32px 0;
+
+      @include desktop {
+        padding: 0;
+      }
+
+      .bottomItem {
+        @include centerColumn;
+
+        p {
+          margin-top: 16px;
+          font-size: 12px;
+          line-height: 140%;
+          color: $color_body_50;
+
+          @include desktop {
+            font-size: 24px;
+          }
+        }
+
+        &:nth-child(1) {
+          svg {
+            width: 67px;
+            height: 67px;
+
+            @include desktop {
+              width: 126px;
+              height: 126px;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          margin-top: 32px;
+          margin-bottom: 32px;
+
+          @include desktop {
+            margin-top: 64px;
+            margin-bottom: 64px;
+          }
+
+          svg {
+            width: 178px;
+            height: 95px;
+
+            @include desktop {
+              width: 335px;
+              height: 178px;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          svg {
+            width: 312px;
+            height: 52px;
+
+            @include desktop {
+              width: 588px;
+              height: 97px;
+            }
+          }
+        }
+
+      }
+
+
+    }
+
+    &:nth-child(1) {
+      .bottom {
+        .bottomItem {
+          svg {
+            path {
+              fill-opacity: 1;
+              fill: $color_main;
+            }
+
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .bottom {
+        .bottomItem {
+          svg {
+            path {
+              fill-opacity: 1;
+              fill: #FFF;
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .bottom {
+        .bottomItem {
+          svg {
+            path {
+              fill-opacity: 1;
+              fill: #09090A!important;
+            }
+          }
+
+          p {
+            color: $color_bg_and_text;
+          }
+        }
+      }
+    }
+
+  }
+}

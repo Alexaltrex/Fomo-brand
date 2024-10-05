@@ -1,0 +1,66 @@
+@import "../../assets/styles/app";
+
+.colors {
+  padding: 32px 0;
+
+  @include desktop {
+    padding: 64px 100px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color_main;
+    padding-left: 24px;
+
+    @include desktop {
+      font-size: 54px;
+      padding-left: 0;
+    }
+  }
+
+  .list {
+    margin-top: 24px;
+
+    @include desktop {
+      margin-top: 72px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      padding-left: 24px;
+
+      @include desktop {
+        height: 100px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 140%;
+        color: $color_main_100;
+
+        @include desktop {
+          font-size: 24px;
+        }
+      }
+
+      &:not(:first-child) {
+        color: $color_bg_and_text;
+      }
+
+      &:first-child {
+        border-top: 1px solid $color_lines;
+
+
+        @include desktop {
+          border-left: 1px solid $color_lines;
+          border-right: 1px solid $color_lines;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../assets/styles/app";
+
+.secondScreen {
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top, .bottom {
+    height: 400px;
+
+    @include desktop {
+      height: 1080px;
+    }
+  }
+
+  .top {
+    @include centerRow;
+    background: $color_main;
+
+    svg {
+      width: 312px;
+      height: 166px;
+
+      @include desktop {
+        width: 760px;
+        height: 404px;
+      }
+    }
+  }
+
+  .bottom {
+    position: relative;
+    overflow: hidden;
+
+    svg {
+      position: absolute;
+      width: 1549px;
+      height: 254px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -11px;
+
+      @include desktop {
+        width: 3000px;
+        height: 670px;
+        left: -80px;
+      }
+    }
+  }
+}

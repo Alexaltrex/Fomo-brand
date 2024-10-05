@@ -1,0 +1,98 @@
+@import "../../assets/styles/app";
+
+.appIcon {
+  padding: 32px 24px;
+
+  @include desktop {
+    padding: 64px 100px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color_main;
+    padding-left: 24px;
+
+    @include desktop {
+      font-size: 54px;
+      padding-left: 0;
+    }
+  }
+
+  .description {
+    margin-top: 24px;
+    font-size: 12px;
+    line-height: 140%;
+    color: $color_body_50;
+
+    @include desktop {
+      margin-top: 24px;
+      font-size: 24px;
+    }
+  }
+
+  .icon {
+    @include centerColumn;
+    position: relative;
+    margin: 54px auto 0;
+    border-radius: 45px;
+    width: 219px;
+    height: 219px;
+    background-color: $color_main;
+
+    @include desktop {
+      margin: 162px auto 0;
+      border-radius: 80px;
+      width: 392px;
+      height: 392px;
+    }
+
+    svg {
+      width: 128px;
+      height: 128px;
+
+      @include desktop {
+        width: 230px;
+        height: 230px;
+      }
+
+      path {
+        fill-opacity: 1;
+        fill: #09090A;
+      }
+    }
+
+    & > div {
+      @include centerColumn;
+      position: absolute;
+      border-radius: 999px;
+      width: 61px;
+      height: 61px;
+      top: -22px;
+      right: -22px;
+      background-color: $color_red;
+
+      @include desktop {
+        width: 110px;
+        height: 110px;
+        top: -40px;
+        right: -40px;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color_main_100;
+
+        @include desktop {
+          font-size: 64px;
+        }
+      }
+    }
+  }
+
+}
