@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Fomo-brand/static/css/main.8abaca01.css",
+    "main.js": "/Fomo-brand/static/js/main.39f51017.js",
+    "static/js/453.af5b6b97.chunk.js": "/Fomo-brand/static/js/453.af5b6b97.chunk.js",
+    "index.html": "/Fomo-brand/index.html",
+    "main.8abaca01.css.map": "/Fomo-brand/static/css/main.8abaca01.css.map",
+    "main.39f51017.js.map": "/Fomo-brand/static/js/main.39f51017.js.map",
+    "453.af5b6b97.chunk.js.map": "/Fomo-brand/static/js/453.af5b6b97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8abaca01.css",
+    "static/js/main.39f51017.js"
+  ]
+}
